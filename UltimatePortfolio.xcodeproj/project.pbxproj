@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E5885602C71E686006A56A1 /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9E58855E2C71E686006A56A1 /* Main.xcdatamodeld */; };
+		9E5885622C71EA50006A56A1 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5885612C71EA50006A56A1 /* DataController.swift */; };
 		9EC572B72C70A371004D0607 /* UltimatePortfolioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC572B62C70A371004D0607 /* UltimatePortfolioApp.swift */; };
 		9EC572B92C70A371004D0607 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC572B82C70A371004D0607 /* ContentView.swift */; };
 		9EC572BB2C70A372004D0607 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EC572BA2C70A372004D0607 /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9E58855F2C71E686006A56A1 /* Main.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Main.xcdatamodel; sourceTree = "<group>"; };
+		9E5885612C71EA50006A56A1 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		9EC572B32C70A371004D0607 /* UltimatePortfolio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UltimatePortfolio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EC572B62C70A371004D0607 /* UltimatePortfolioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UltimatePortfolioApp.swift; sourceTree = "<group>"; };
 		9EC572B82C70A371004D0607 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,7 +58,9 @@
 			children = (
 				9EC572B62C70A371004D0607 /* UltimatePortfolioApp.swift */,
 				9EC572B82C70A371004D0607 /* ContentView.swift */,
+				9E5885612C71EA50006A56A1 /* DataController.swift */,
 				9EC572BA2C70A372004D0607 /* Assets.xcassets */,
+				9E58855E2C71E686006A56A1 /* Main.xcdatamodeld */,
 				9EC572BC2C70A372004D0607 /* UltimatePortfolio.entitlements */,
 				9EC572BD2C70A372004D0607 /* Preview Content */,
 			);
@@ -139,6 +145,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E5885602C71E686006A56A1 /* Main.xcdatamodeld in Sources */,
+				9E5885622C71EA50006A56A1 /* DataController.swift in Sources */,
 				9EC572B92C70A371004D0607 /* ContentView.swift in Sources */,
 				9EC572B72C70A371004D0607 /* UltimatePortfolioApp.swift in Sources */,
 			);
@@ -359,6 +367,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9E58855E2C71E686006A56A1 /* Main.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9E58855F2C71E686006A56A1 /* Main.xcdatamodel */,
+			);
+			currentVersion = 9E58855F2C71E686006A56A1 /* Main.xcdatamodel */;
+			name = Main.xcdatamodeld;
+			path = /Users/damienchailloleau/Desktop/HWSProject/UltimatePortfolio/UltimatePortfolio/Main.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 9EC572AB2C70A371004D0607 /* Project object */;
 }
