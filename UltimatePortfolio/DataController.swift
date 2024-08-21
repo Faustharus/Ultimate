@@ -10,6 +10,8 @@ import CoreData
 class DataController: ObservableObject {
     let container: NSPersistentCloudKitContainer
     
+    @Published var selectedFilter: Filter? = .all
+    
     static var preview: DataController = {
         let dataController = DataController(inMemory: true)
         dataController.createSampleCode()
@@ -76,10 +78,10 @@ class DataController: ObservableObject {
     
     func deleteAll() {
         let request1: NSFetchRequest<NSFetchRequestResult> = Tag.fetchRequest()
-        delete(request1)
+        delete(request1) // <= delete() - Function Overloading
         
         let request2: NSFetchRequest<NSFetchRequestResult> = Issue.fetchRequest()
-        delete(request2)
+        delete(request2) // <= delete() - Function Overloading
         
         save()
     }
