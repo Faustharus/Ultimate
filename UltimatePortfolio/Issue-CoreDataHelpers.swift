@@ -45,6 +45,7 @@ extension Issue {
 }
 
 extension Issue: Comparable {
+    /** Example of `stable` data sorting : It will always organized the same way whatever the object */
     public static func <(lhs: Issue, rhs: Issue) -> Bool {
         let left = lhs.issueTitle.localizedLowercase
         let right = lhs.issueTitle.localizedLowercase
