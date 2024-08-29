@@ -25,11 +25,24 @@ class DataController: ObservableObject {
             container.persistentStoreDescriptions.first?.url = URL(filePath: "/dev/null")
         }
         
+        // MARK: Allows to changes data From and To iCloud <-> CoreData while the app is currently in use
+        container.viewContext.automaticallyMergesChangesFromParent = true
+        // MARK: iCloud will consider newer the data change from the Device (CoreData), not from the Remote (iCloud DB itself)
+        container.viewContext.mergePolicy = NSMergePolicy.mergeByPropertyObjectTrump
+        // MARK: Define the rules for the occuring changes inside CoreData <-> iCloud and transmit the information
+        container.persistentStoreDescriptions.first?.setOption(true as NSNumber, forKey: NSPersistentStoreRemoteChangeNotificationPostOptionKey)
+        // MARK: Perform the change requested
+        NotificationCenter.default.addObserver(forName: .NSPersistentStoreRemoteChange, object: container.persistentStoreCoordinator, queue: .main, using: remoteStoreChanged)
+        
         container.loadPersistentStores { storeDescription, error in
             if let error {
                 fatalError("Fatal Error detected : Loading store failed - \(error.localizedDescription)")
             }
         }
+    }
+    
+    func remoteStoreChanged(_ notification: Notification) {
+        objectWillChange.send()
     }
     
     func createSampleCode() {
