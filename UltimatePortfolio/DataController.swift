@@ -11,6 +11,7 @@ class DataController: ObservableObject {
     let container: NSPersistentCloudKitContainer
     
     @Published var selectedFilter: Filter? = .all
+    @Published var selectedIssue: Issue?
     
     static var preview: DataController = {
         let dataController = DataController(inMemory: true)

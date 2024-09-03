@@ -11,14 +11,12 @@ struct NoIssueView: View {
     @EnvironmentObject var dataController: DataController
     
     var body: some View {
-        VStack {
-            Text("No Issue Selected !")
-                .font(.title)
-                .foregroundStyle(.secondary)
-            
-            Button("New Issue") {
-                // MARK: More code later
-            }
+        Text("No Issue Selected !")
+            .font(.title)
+            .foregroundStyle(.secondary)
+        
+        Button("New Issue") {
+            // MARK: More code later
         }
     }
 }

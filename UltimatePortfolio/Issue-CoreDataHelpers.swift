@@ -31,6 +31,14 @@ extension Issue {
         return result.sorted()
     }
     
+    var issueCompleted: String {
+        if completed {
+            return "Closed"
+        } else {
+            return "Open"
+        }
+    }
+    
     static var example: Issue {
         let controller = DataController(inMemory: true)
         let viewContext = controller.container.viewContext

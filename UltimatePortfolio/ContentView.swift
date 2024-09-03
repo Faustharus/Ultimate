@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct ContentView: View {
-    
     @EnvironmentObject var dataController: DataController
     
     var issues: [Issue] {
@@ -27,7 +26,7 @@ struct ContentView: View {
     }
     
     var body: some View {
-        List {
+        List(selection: $dataController.selectedIssue) {
             ForEach(issues) { issue in
                 IssueRow(issue: issue)
             }
