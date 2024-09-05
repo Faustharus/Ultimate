@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct IssueView: View {
+    @EnvironmentObject var dataController: DataController
     @ObservedObject var issue: Issue
     
     var body: some View {
@@ -29,6 +30,40 @@ struct IssueView: View {
                     Text("Medium").tag(Int16(1))
                     Text("High").tag(Int16(2))
                 }
+                
+                Menu {
+                    // MARK: Show selected tags
+                    ForEach(issue.issueTags) { tag in
+                        Button {
+                            issue.removeFromTags(tag)
+                        } label: {
+                            Label(tag.tagName, systemImage: "checkmark")
+                        }
+                    }
+                    
+                    // MARK: Show unselected tags
+                    let otherTags = dataController.missingTags(from: issue)
+                    
+                    if otherTags.isEmpty == false {
+                        Divider()
+                        
+                        Section("Add Tags") {
+                            ForEach(otherTags) { tag in
+                                Button {
+                                    issue.addToTags(tag)
+                                } label: {
+                                    Text(tag.tagName)
+                                }
+                            }
+                        }
+                    }
+                    
+                } label: {
+                    Text(issue.issueTagList)
+                        .multilineTextAlignment(.leading)
+                        .frame(maxWidth: .infinity)
+                        .animation(nil, value: issue.issueTagList)
+                }
             }
             
             Section {
@@ -41,9 +76,11 @@ struct IssueView: View {
                 }
             }
         }
+        .disabled(issue.isDeleted)
     }
 }
 
 #Preview {
     IssueView(issue: Issue.example)
+        .environmentObject(DataController.preview)
 }

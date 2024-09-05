@@ -31,6 +31,16 @@ extension Issue {
         return result.sorted()
     }
     
+    var issueTagList: String {
+        guard let tags else { return "No Tags" }
+        
+        if tags.count == 0 { /* <= Can't use `.isEmpty` because `tags` is an NSSet, not a Swift Set */
+            return "No Tags"
+        } else {
+            return issueTags.map(\.tagName).formatted()
+        }
+    }
+    
     var issueCompleted: String {
         if completed {
             return "Closed"

@@ -74,15 +74,15 @@
 			isa = PBXGroup;
 			children = (
 				9EC572B62C70A371004D0607 /* UltimatePortfolioApp.swift */,
-				9EC572B82C70A371004D0607 /* ContentView.swift */,
-				9EFD85952C75D5E900822F80 /* Filter.swift */,
 				9EFD85912C75D4E900822F80 /* SidebarView.swift */,
+				9EC572B82C70A371004D0607 /* ContentView.swift */,
+				9E6996F52C7E30BA00F9D01D /* IssueRow.swift */,
 				9EFD85932C75D4F200822F80 /* DetailView.swift */,
 				9E79D4172C85B2C900A28425 /* IssueView.swift */,
-				9E6996F52C7E30BA00F9D01D /* IssueRow.swift */,
 				9E79D4192C85B2DF00A28425 /* NoIssueView.swift */,
 				9EF067632C7A3C68001BE375 /* Issue-CoreDataHelpers.swift */,
 				9EF067652C7A41C0001BE375 /* Tag-CoreDataHelpers.swift */,
+				9EFD85952C75D5E900822F80 /* Filter.swift */,
 				9E5885612C71EA50006A56A1 /* DataController.swift */,
 				9EC572BA2C70A372004D0607 /* Assets.xcassets */,
 				9E58855E2C71E686006A56A1 /* Main.xcdatamodeld */,

@@ -18,6 +18,7 @@ struct NoIssueView: View {
         Button("New Issue") {
             // MARK: More code later
         }
+        .buttonStyle(.borderedProminent)
     }
 }
 
