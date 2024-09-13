@@ -13,7 +13,7 @@ class DataController: ObservableObject {
     @Published var selectedFilter: Filter? = .all
     @Published var selectedIssue: Issue?
     
-    private var saveTask: Task<Void, Error>? 
+    private var saveTask: Task<Void, Error>?
     
     static var preview: DataController = {
         let dataController = DataController(inMemory: true)
