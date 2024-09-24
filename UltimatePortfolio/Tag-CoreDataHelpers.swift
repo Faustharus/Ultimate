@@ -35,7 +35,7 @@ extension Tag {
 extension Tag: Comparable {
     public static func <(lhs: Tag, rhs: Tag) -> Bool {
         let left = lhs.tagName.localizedLowercase
-        let right = lhs.tagName.localizedLowercase
+        let right = rhs.tagName.localizedLowercase
         
         if left == right {
             return lhs.tagID.uuidString < rhs.tagID.uuidString
