@@ -16,7 +16,7 @@ struct NoIssueView: View {
             .foregroundStyle(.secondary)
         
         Button("New Issue") {
-            // MARK: More code later
+            dataController.newIssue()
         }
         .buttonStyle(.borderedProminent)
     }
