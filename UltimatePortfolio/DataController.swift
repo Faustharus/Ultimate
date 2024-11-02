@@ -208,7 +208,7 @@ class DataController: ObservableObject {
             
             if filterStatus != .all {
                 let lookForClosed = filterStatus == .closed
-                let statusFilter = NSPredicate(format: "completed = %@", NSNumber(value: filterPriority))
+                let statusFilter = NSPredicate(format: "completed = %@", NSNumber(value: lookForClosed))
                 predicates.append(statusFilter)
             }
         }
