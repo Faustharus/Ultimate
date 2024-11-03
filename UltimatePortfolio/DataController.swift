@@ -221,4 +221,36 @@ class DataController: ObservableObject {
         return allIssues.sorted()
     }
     
+    func count<T>(for fetchRequest: NSFetchRequest<T>) -> Int {
+        (try? container.viewContext.count(for: fetchRequest)) ?? 0
+    }
+    
+    func hasEarned(award: Award) -> Bool {
+        switch award.criterion {
+        case "issues":
+            // MARK: Return true, if they added a certain number of isuues
+            let fetchRequest = Issue.fetchRequest()
+            let awardCount = count(for: fetchRequest)
+            return awardCount >= award.value
+            
+        case "closed":
+            // MARK: Return true, if they close a certain number of issues
+            let fetchRequest = Issue.fetchRequest()
+            fetchRequest.predicate = NSPredicate(format: "completed = true")
+            let awardCount = count(for: fetchRequest)
+            return awardCount >= award.value
+            
+        case "tags":
+            // MARK: Return true, if a certain number of tags are created
+            let fetchRequest = Tag.fetchRequest()
+            let awardCount = count(for: fetchRequest)
+            return awardCount >= award.value
+            
+        default:
+            // MARK: An unknown criterion, this should never be allowed
+            //  fatalError("Unknown Award Criterion: \(award.criterion)")
+            return false
+        }
+    }
+    
 }
