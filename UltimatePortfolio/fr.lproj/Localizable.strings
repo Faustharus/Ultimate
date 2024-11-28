@@ -1,0 +1,103 @@
+/* 
+  Localizable.strings
+  UltimatePortfolio
+
+  Created by Damien Chailloleau on 26/11/2024.
+  
+*/
+
+/* GENERAL STRINGS */
+"OK" = "OK";
+"Cancel" = "Annuler";
+"Delete" = "Supprimer";
+"Rename" = "Renommer";
+"Actions" = "Actions";
+
+
+
+/* SIDEBARVIEW */
+"Filters" = "Filtres";
+"Smart Filters" = "Filtres Intelligents";
+"All Issues" = "Tous les problèmes";
+"Recent Issues" = "Problèmes Recents";
+"Tags" = "Étiquette";
+"Add tag" = "Ajouter étiquette";
+"Show awards" = "Voir récompense";
+
+"Rename tag" = "Renommer étiquette";
+"New name" = "Nouveau nom";
+
+
+
+/* CONTENTVIEW */
+"Issues" = "Problèmes";
+"Issue" = "Problème";
+
+
+/* A button that shows a menu with the following options */
+"Filter" = "Filtrer";
+"Turn Filter On" = "Activer le Filtre"; /* Enables filtering */
+"Turn Filter Off" = "Désactiver le Filtre"; /* Disables filtering */
+"Sort By" = "Trier"; /* Adjust the order issues are shown */
+"Date Created" = "Créer le"; /* Sort issues by the date they were created */
+"Date Modified" = "Modifier le"; /* Sort issues by the date they were last changed */
+"Newest to Oldest" = "Du plus Récent au plus Ancien"; /* Place newer issues before older issues */
+"Oldest to Newest" = "Du plus Ancien au plus Récent"; /* Place older issues before newer issues */
+
+"All" = "Tous";
+"Open" = "Ouvert";
+"Closed" = "Fermé";
+
+"Low" = "Basse";
+"Medium" = "Moyenne";
+"High" = "Haute";
+
+/* Create a new issue */
+"New Issue" = "Nouveau Problème";
+
+/* A text placeholder, to help users search */
+"Filter issues, or type # to add tags" = "Flitrer problèmes, ou taper # pour ajouter étiquette";
+
+/* Shown as a status for closed issues */
+"CLOSED" = "FERMÉE";
+"Closed" = "Fermée";
+
+
+
+/* DETAILSVIEW */
+"Details" = "Détails";
+
+/* NOISSUEVIEW */
+"No Issue Selected" = "Pas de Problème sélectionée";
+
+/* ISSUEVIEW */
+"Copy Issue Title" = "Copié le titre du problème";
+"Close Issue" = "Fermé le problème";
+"Re-open Issue" = "Ré-ouvrir le problème";
+
+/* Fields that let the users enter details about a specific issue */
+"Enter the issue title here" = "Entrer le titre du problème";
+"**Modified:** %@" = "**Modifiée:** %@";
+"**Status:** %@" = "**Statut:** %@";
+"Priority" = "Priorité";
+"Add Tags" = "Ajouter Étiquette";
+"Basic Information" = "Information du Problème";
+"Enter the issue description here" = "Entrer la description du problème";
+
+
+
+/* AWARDS VIEW */
+"Awards" = "Récompense";
+"Locked" = "Vérouillé";
+"Unlocked %@" = "Dévérouillé %@";
+
+
+
+/* DATA */
+"New tag" = "Nouvelle Étiquette";
+"New issue" = "Nouveau Problème";
+
+
+
+/* DEBUG ONLY */
+"ADD SAMPLES" = "AJOUTER ÉCHANTILLION";

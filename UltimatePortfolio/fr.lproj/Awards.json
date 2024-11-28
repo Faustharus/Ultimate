@@ -1,0 +1,162 @@
+[
+    {
+        "name": "Premier Pas",
+        "description": "Ajouter votre premier problème.",
+        "color": "SkyBlue",
+        "criterion": "issues",
+        "value": 1,
+        "image": "figure.walk"
+    },
+    {
+        "name": "C'est un bon début",
+        "description": "Ajouter 10 problèmes.",
+        "color": "SkyBlue",
+        "criterion": "issues",
+        "value": 10,
+        "image": "hand.thumbsup.fill"
+    },
+    {
+        "name": "Ne lâchez rien",
+        "description": "Ajouter 20 problèmes.",
+        "color": "SkyBlue",
+        "criterion": "issues",
+        "value": 20,
+        "image": "tray.and.arrow.up.fill"
+    },
+    {
+        "name": "Passe la 3ème",
+        "description": "Ajouter 50 problèmes.",
+        "color": "SkyBlue",
+        "criterion": "issues",
+        "value": 50,
+        "image": "speedometer"
+    },
+    {
+        "name": "Vous faites des vagues",
+        "description": "Ajouter 100 problèmes.",
+        "color": "SkyBlue",
+        "criterion": "issues",
+        "value": 100,
+        "image": "dot.radiowaves.left.and.right"
+    },
+    {
+        "name": "Sportif de Haut-Niveau",
+        "description": "Ajouter 250 problèmes.",
+        "color": "SkyBlue",
+        "criterion": "issues",
+        "value": 250,
+        "image": "square.stack.3d.up.fill"
+    },
+    {
+        "name": "Vous êtes une Star",
+        "description": "Ajouter 500 problèmes.",
+        "color": "SkyBlue",
+        "criterion": "issues",
+        "value": 500,
+        "image": "star.circle.fill"
+    },
+    {
+        "name": "Champion Incontesté",
+        "description": "Ajouter 1000 problèmes.",
+        "color": "SkyBlue",
+        "criterion": "issues",
+        "value": 1000,
+        "image": "crown.fill"
+    },
+    {
+        "name": "Cocher la case",
+        "description": "Fermez votre premier problème.",
+        "color": "ForestGreen",
+        "criterion": "closed",
+        "value": 1,
+        "image": "checkmark.shield.fill"
+    },
+    {
+        "name": "Vous assurez !",
+        "description": "Fermez 10 problèmes.",
+        "color": "ForestGreen",
+        "criterion": "closed",
+        "value": 10,
+        "image": "guitars.fill"
+    },
+    {
+        "name": "Ça fait beaucoup 20",
+        "description": "Fermez 20 problèmes.",
+        "color": "ForestGreen",
+        "criterion": "closed",
+        "value": 20,
+        "image": "20.square.fill"
+    },
+    {
+        "name": "L'Œil du Lynx",
+        "description": "Fermez 50 problèmes.",
+        "color": "ForestGreen",
+        "criterion": "closed",
+        "value": 50,
+        "image": "target"
+    },
+    {
+        "name": "Les Hautes-Sphères",
+        "description": "Fermez 100 problèmes.",
+        "color": "ForestGreen",
+        "criterion": "closed",
+        "value": 100,
+        "image": "airplane.circle.fill"
+    },
+    {
+        "name": "L'Inarrêtable",
+        "description": "Fermez 250 problèmes.",
+        "color": "ForestGreen",
+        "criterion": "closed",
+        "value": 250,
+        "image": "flame.fill"
+    },
+    {
+        "name": "Ça poinçonne sévère !",
+        "description": "Fermez 500 problèmes.",
+        "color": "ForestGreen",
+        "criterion": "closed",
+        "value": 500,
+        "image": "text.badge.checkmark"
+    },
+    {
+        "name": "Boom!",
+        "description": "Fermez 1000 problèmes.",
+        "color": "ForestGreen",
+        "criterion": "closed",
+        "value": 1000,
+        "image": "bolt.circle.fill"
+    },
+    {
+        "name": "Compostage !",
+        "description": "Vous avez crée votre première étiquette.",
+        "color": "CoinGold",
+        "criterion": "tags",
+        "value": 1,
+        "image": "tag.fill"
+    },
+    {
+        "name": "Quel collection !",
+        "description": "Vous avez créez 10 étiquettes.",
+        "color": "CoinGold",
+        "criterion": "tags",
+        "value": 10,
+        "image": "tag.circle.fill"
+    },
+    {
+        "name": "Composteur",
+        "description": "Vous avez créez 50 étiquettes.",
+        "color": "CoinGold",
+        "criterion": "tags",
+        "value": 50,
+        "image": "square.grid.3x1.folder.fill.badge.plus"
+    },
+    {
+        "name": "Supporteur",
+        "description": "Vous avez achetez l'abonnement Premium.",
+        "color": "RoyalPurple",
+        "criterion": "unlock",
+        "value": 0,
+        "image": "dollarsign.square.fill"
+    }
+]

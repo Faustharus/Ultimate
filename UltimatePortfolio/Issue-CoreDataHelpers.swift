@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 extension Issue {
     var issueTitle: String {
@@ -41,21 +42,25 @@ extension Issue {
         }
     }
     
-    var issueCompleted: String {
+    var issueCompleted: LocalizedStringKey {
         if completed {
             return "Closed"
         } else {
             return "Open"
         }
     }
-    
+
+    var issueFormattedCreationDate: String {
+        issueCreationDate.formatted(date: .numeric, time: .omitted)
+    }
+
     static var example: Issue {
         let controller = DataController(inMemory: true)
         let viewContext = controller.container.viewContext
         
         let issue = Issue(context: viewContext)
         issue.title = "This is a title !"
-        issue.content = "That is the content of the issue"
+        issue.content = "Enter the issue description here"
         issue.priority = 2
         issue.creationDate = .now
         return issue
