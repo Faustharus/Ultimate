@@ -42,7 +42,7 @@ extension Issue {
         }
     }
     
-    var issueCompleted: LocalizedStringKey {
+    var issueCompleted: String {
         if completed {
             return "Closed"
         } else {

@@ -31,39 +31,8 @@ struct IssueView: View {
                     Text("High").tag(Int16(2))
                 }
                 
-                Menu {
-                    // MARK: Show selected tags
-                    ForEach(issue.issueTags) { tag in
-                        Button {
-                            issue.removeFromTags(tag)
-                        } label: {
-                            Label(tag.tagName, systemImage: "checkmark")
-                        }
-                    }
-                    
-                    // MARK: Show unselected tags
-                    let otherTags = dataController.missingTags(from: issue)
-                    
-                    if otherTags.isEmpty == false {
-                        Divider()
-                        
-                        Section("Add Tags") {
-                            ForEach(otherTags) { tag in
-                                Button {
-                                    issue.addToTags(tag)
-                                } label: {
-                                    Text(tag.tagName)
-                                }
-                            }
-                        }
-                    }
-                    
-                } label: {
-                    Text(issue.issueTagList)
-                        .multilineTextAlignment(.leading)
-                        .frame(maxWidth: .infinity)
-                        .animation(nil, value: issue.issueTagList)
-                }
+                // MARK: Menu for Selecting Tags
+                TagsMenuView(issue: issue)
             }
             
             Section {
@@ -82,23 +51,7 @@ struct IssueView: View {
         }
         .onSubmit(dataController.save)
         .toolbar {
-            Menu {
-                Button {
-                    UIPasteboard.general.string = issue.title
-                } label: {
-                    Label("Copy Issue Title", systemImage: "doc.on.doc")
-                }
-                
-                Button {
-                    issue.completed.toggle()
-                    dataController.save()
-                } label: {
-                    Label(issue.completed ? "Re-open Issue" : "Close Issue", systemImage: "bubble.left.and.exclamationmark.bubble.right")
-                }
-                
-            } label: {
-                Label("Actions", systemImage: "ellipsis.circle")
-            }
+            IssueViewToolbar(issue: issue)
         }
     }
 }
