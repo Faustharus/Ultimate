@@ -9,10 +9,10 @@ import SwiftUI
 
 @main
 struct UltimatePortfolioApp: App {
-    
+
     @Environment(\.scenePhase) var scenePhase
     @StateObject var dataController = DataController()
-    
+
     var body: some Scene {
         WindowGroup {
             NavigationSplitView(sidebar: {
@@ -24,7 +24,7 @@ struct UltimatePortfolioApp: App {
             })
             .environment(\.managedObjectContext, dataController.container.viewContext)
             .environmentObject(dataController)
-            .onChange(of: scenePhase) { oldValue, newValue in
+            .onChange(of: scenePhase) { _, newValue in
                 if newValue != .active {
                     dataController.save()
                 }
