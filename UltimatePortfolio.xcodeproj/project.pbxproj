@@ -49,7 +49,7 @@
 		9E9890D82CF8CC3100FAAD7E /* TagsMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagsMenuView.swift; sourceTree = "<group>"; };
 		9E9890DA2CF8CD9800FAAD7E /* SmartFilterRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartFilterRow.swift; sourceTree = "<group>"; };
 		9E9890DC2CF8CE2100FAAD7E /* UserFilterRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFilterRow.swift; sourceTree = "<group>"; };
-		9EBB9B052C7495E700460CFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		9EBB9B052C7495E700460CFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9EC572B32C70A371004D0607 /* UltimatePortfolio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UltimatePortfolio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EC572B62C70A371004D0607 /* UltimatePortfolioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UltimatePortfolioApp.swift; sourceTree = "<group>"; };
 		9EC572B82C70A371004D0607 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -83,6 +83,87 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9E6890F72CFEED8A0013BD49 /* Filters */ = {
+			isa = PBXGroup;
+			children = (
+				9EFD85952C75D5E900822F80 /* Filter.swift */,
+				9EFD85912C75D4E900822F80 /* SidebarView.swift */,
+				9EC743292CF8B55100FBEC85 /* SidebarViewToolbar.swift */,
+				9E9890DA2CF8CD9800FAAD7E /* SmartFilterRow.swift */,
+				9E9890DC2CF8CE2100FAAD7E /* UserFilterRow.swift */,
+			);
+			path = Filters;
+			sourceTree = "<group>";
+		};
+		9E6890F82CFEEDB50013BD49 /* Issues */ = {
+			isa = PBXGroup;
+			children = (
+				9EC572B82C70A371004D0607 /* ContentView.swift */,
+				9E9890D62CF8C98300FAAD7E /* ContentViewToolbar.swift */,
+				9E6996F52C7E30BA00F9D01D /* IssueRow.swift */,
+			);
+			path = Issues;
+			sourceTree = "<group>";
+		};
+		9E6890F92CFEEDC90013BD49 /* Editing */ = {
+			isa = PBXGroup;
+			children = (
+				9EFD85932C75D4F200822F80 /* DetailView.swift */,
+				9E79D4172C85B2C900A28425 /* IssueView.swift */,
+				9E9890D42CF8C88B00FAAD7E /* IssueViewToolbar.swift */,
+				9E79D4192C85B2DF00A28425 /* NoIssueView.swift */,
+				9E9890D82CF8CC3100FAAD7E /* TagsMenuView.swift */,
+			);
+			path = Editing;
+			sourceTree = "<group>";
+		};
+		9E6890FA2CFEEDF20013BD49 /* Awards */ = {
+			isa = PBXGroup;
+			children = (
+				9EFCB3112CF612B600242FCD /* Awards.json */,
+				9E3158612CD7AFEC007F2450 /* Award.swift */,
+				9E3158632CD7B166007F2450 /* AwardsView.swift */,
+			);
+			path = Awards;
+			sourceTree = "<group>";
+		};
+		9E6890FB2CFEEE3B0013BD49 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9E5885612C71EA50006A56A1 /* DataController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9E6890FC2CFEEE8F0013BD49 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9EF067652C7A41C0001BE375 /* Tag-CoreDataHelpers.swift */,
+				9EF067632C7A3C68001BE375 /* Issue-CoreDataHelpers.swift */,
+				9ED6229A2CD6925500B71FE4 /* Bundle-Decodable.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9E6890FD2CFEEEA70013BD49 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				9EFCB30B2CF5FC4000242FCD /* Localizable.stringsdict */,
+				9EFCB3082CF5F24E00242FCD /* Localizable.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		9E6890FF2CFEEF4D0013BD49 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				9E58855E2C71E686006A56A1 /* Main.xcdatamodeld */,
+				9EBB9B052C7495E700460CFE /* Info.plist */,
+				9EC572BC2C70A372004D0607 /* UltimatePortfolio.entitlements */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
 		9EC572AA2C70A371004D0607 = {
 			isa = PBXGroup;
 			children = (
@@ -103,33 +184,16 @@
 			isa = PBXGroup;
 			children = (
 				9EC572B62C70A371004D0607 /* UltimatePortfolioApp.swift */,
-				9EFD85912C75D4E900822F80 /* SidebarView.swift */,
-				9E9890DC2CF8CE2100FAAD7E /* UserFilterRow.swift */,
-				9E9890DA2CF8CD9800FAAD7E /* SmartFilterRow.swift */,
-				9EC743292CF8B55100FBEC85 /* SidebarViewToolbar.swift */,
-				9EC572B82C70A371004D0607 /* ContentView.swift */,
-				9E9890D62CF8C98300FAAD7E /* ContentViewToolbar.swift */,
-				9E6996F52C7E30BA00F9D01D /* IssueRow.swift */,
-				9EFD85932C75D4F200822F80 /* DetailView.swift */,
-				9E79D4172C85B2C900A28425 /* IssueView.swift */,
-				9E9890D82CF8CC3100FAAD7E /* TagsMenuView.swift */,
-				9E9890D42CF8C88B00FAAD7E /* IssueViewToolbar.swift */,
-				9E79D4192C85B2DF00A28425 /* NoIssueView.swift */,
-				9E3158632CD7B166007F2450 /* AwardsView.swift */,
-				9E3158612CD7AFEC007F2450 /* Award.swift */,
-				9EF067632C7A3C68001BE375 /* Issue-CoreDataHelpers.swift */,
-				9EF067652C7A41C0001BE375 /* Tag-CoreDataHelpers.swift */,
-				9EFD85952C75D5E900822F80 /* Filter.swift */,
-				9E5885612C71EA50006A56A1 /* DataController.swift */,
-				9ED6229A2CD6925500B71FE4 /* Bundle-Decodable.swift */,
-				9EFCB3112CF612B600242FCD /* Awards.json */,
-				9EFCB3082CF5F24E00242FCD /* Localizable.strings */,
-				9EFCB30B2CF5FC4000242FCD /* Localizable.stringsdict */,
+				9E6890F82CFEEDB50013BD49 /* Issues */,
+				9E6890F72CFEED8A0013BD49 /* Filters */,
+				9E6890F92CFEEDC90013BD49 /* Editing */,
+				9E6890FA2CFEEDF20013BD49 /* Awards */,
+				9E6890FB2CFEEE3B0013BD49 /* Controllers */,
+				9E6890FC2CFEEE8F0013BD49 /* Extensions */,
+				9E6890FD2CFEEEA70013BD49 /* Localization */,
+				9E6890FF2CFEEF4D0013BD49 /* Configuration */,
 				9ED6229E2CD694AE00B71FE4 /* Colors.xcassets */,
 				9EC572BA2C70A372004D0607 /* Assets.xcassets */,
-				9E58855E2C71E686006A56A1 /* Main.xcdatamodeld */,
-				9EBB9B052C7495E700460CFE /* Info.plist */,
-				9EC572BC2C70A372004D0607 /* UltimatePortfolio.entitlements */,
 				9EC572BD2C70A372004D0607 /* Preview Content */,
 			);
 			path = UltimatePortfolio;
@@ -398,7 +462,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = UltimatePortfolio/UltimatePortfolio.entitlements;
+				CODE_SIGN_ENTITLEMENTS = UltimatePortfolio/Configuration/UltimatePortfolio.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
@@ -407,7 +471,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = UltimatePortfolio/Info.plist;
+				INFOPLIST_FILE = UltimatePortfolio/Configuration/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -437,7 +501,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = UltimatePortfolio/UltimatePortfolio.entitlements;
+				CODE_SIGN_ENTITLEMENTS = UltimatePortfolio/Configuration/UltimatePortfolio.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
@@ -446,7 +510,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = UltimatePortfolio/Info.plist;
+				INFOPLIST_FILE = UltimatePortfolio/Configuration/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -501,8 +565,7 @@
 				9E58855F2C71E686006A56A1 /* Main.xcdatamodel */,
 			);
 			currentVersion = 9E58855F2C71E686006A56A1 /* Main.xcdatamodel */;
-			name = Main.xcdatamodeld;
-			path = /Users/damienchailloleau/Desktop/HWSProject/UltimatePortfolio/UltimatePortfolio/Main.xcdatamodeld;
+			path = Main.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

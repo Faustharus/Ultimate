@@ -56,6 +56,7 @@ class DataController: ObservableObject {
     init(inMemory: Bool = false) {
         container = NSPersistentCloudKitContainer(name: "Main")
 
+        // If we're saving this database to memory then use he special URL /dev/null.
         if inMemory {
             container.persistentStoreDescriptions.first?.url = URL(filePath: "/dev/null")
         }
