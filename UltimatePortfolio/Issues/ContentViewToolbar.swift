@@ -53,7 +53,7 @@ struct ContentViewToolbar: View {
         }
 
         Button(action: dataController.newIssue) {
-            Label("New Issue", systemImage: "square.and.pencil")
+            Label("Add Issue", systemImage: "square.and.pencil")
         }
     }
 }

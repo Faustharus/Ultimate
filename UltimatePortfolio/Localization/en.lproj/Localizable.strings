@@ -52,7 +52,7 @@
 "High" = "High";
 
 /* Create a new issue */
-"New Issue" = "New Issue";
+"Add Issue" = "Add Issue";
 
 /* A text placeholder, to help users search */
 "Filter issues, or type # to add tags" = "Filter issues, or type # to add tags";

@@ -53,7 +53,7 @@
 "High" = "Haute";
 
 /* Create a new issue */
-"New Issue" = "Nouveau Problème";
+"Add Issue" = "Nouveau Problème";
 
 /* A text placeholder, to help users search */
 "Filter issues, or type # to add tags" = "Flitrer problèmes, ou taper # pour ajouter étiquette";
