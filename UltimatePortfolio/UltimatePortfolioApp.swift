@@ -18,7 +18,7 @@ struct UltimatePortfolioApp: App {
             NavigationSplitView(sidebar: {
                 SidebarView(dataController: dataController)
             }, content: {
-                ContentView()
+                ContentView(dataController: dataController)
             }, detail: {
                 DetailView()
             })

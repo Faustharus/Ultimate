@@ -89,7 +89,7 @@
 /* AWARDS VIEW */
 "Awards" = "Récompense";
 "Locked" = "Vérouillé";
-"Unlocked %@" = "Dévérouillé %@";
+"Unlocked: %@" = "Dévérouillé: %@";
 
 
 
