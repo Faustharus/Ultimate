@@ -5,6 +5,7 @@
 //  Created by Damien Chailloleau on 17/08/2024.
 //
 
+import CoreSpotlight
 import SwiftUI
 
 @main
@@ -22,6 +23,7 @@ struct UltimatePortfolioApp: App {
             }, detail: {
                 DetailView()
             })
+            .onContinueUserActivity(CSSearchableItemActionType, perform: loadSpotlightItem)
             .environment(\.managedObjectContext, dataController.container.viewContext)
             .environmentObject(dataController)
             .onChange(of: scenePhase) { _, newValue in
@@ -31,4 +33,12 @@ struct UltimatePortfolioApp: App {
             }
         }
     }
+
+    func loadSpotlightItem(_ userActivity: NSUserActivity) {
+        if let uniqueIdentifier = userActivity.userInfo?[CSSearchableItemActivityIdentifier] as? String {
+            dataController.selectedIssue = dataController.issue(with: uniqueIdentifier)
+            dataController.selectedFilter = .all
+        }
+    }
+
 }
